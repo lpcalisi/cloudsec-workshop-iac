@@ -1,0 +1,6 @@
+.DS_Store
+.vagrant/
+*.log
+venv/
+ssh/
+.terraform/
