@@ -1,6 +1,6 @@
 # Terraform Variables
 
-### Definicion y Tipos
+### Statement and Types
 
 ```
 variable "name" {
