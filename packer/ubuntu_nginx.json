@@ -1,0 +1,27 @@
+{
+  "builders": [{
+    "type": "amazon-ebs",
+    "ssh_username": "ubuntu",
+    "region": "us-east-1",
+    "instance_type": "t2.medium",
+    "source_ami": "ami-000b3a073fc20e415",
+    "ami_name": "UBUNTU-NGINX-WORKSHOP-IAC-{{timestamp}}",
+    "force_deregister": true,
+    "associate_public_ip_address": true,
+    "launch_block_device_mappings": [{
+      "device_name": "/dev/sda1",
+      "volume_size": 10,
+      "delete_on_termination": true,
+      "volume_type": "gp2"
+    }],
+    "tags": {
+      "BuildUUID" : "{{uuid}}"
+    }
+  }],
+  "provisioners": [{
+    "type": "ansible",
+    "user": "ubuntu",
+    "playbook_file": "ansible/ubuntu_nginx.yml"
+    }
+  ]
+}
