@@ -8,4 +8,4 @@
 * 4 - Getting data from external sources
 ### Requirements:
 * <a href="https://learn.hashicorp.com/terraform/getting-started/install.html">Install Terraform</a>
-
+* AWS Account
