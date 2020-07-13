@@ -1,5 +1,5 @@
-# Que es IAC
-Actualmente, la mayoria de los usuarios crean sus recursos de infraestructura manualmente, y esto genera algunos problemas a la hora de querer replicar la infraestructura o modificarla, con riesgos de introducir errores o de no tener en claro todos los recursos que la componen.
+# What is IAC
+Nowadays, most of the users create their infrastructure resources manually, it generates some problems when you want to replicate or modify the infrastructure, having the chance to enter errors or not knowing exactly wich resources form parts of it.
 La infraestructura como codigo, nos permite definir todos nuestros recursos de infraestructura y configuraciones de una manera automatizada, versionada y controlada.
 
 # Porque utilizar IAC?
