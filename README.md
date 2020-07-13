@@ -1,4 +1,4 @@
-# What is IAC
+# What is IAC?
 Nowadays, most of the users create their infrastructure resources manually, it generates some problems when you want to replicate or modify the infrastructure, having the chance to enter errors or not knowing exactly wich resources form parts of it.
 The infrastructure as a code let us define all of our infraestructure resources and configurations in an automated way, versioned and controlled.
 
