@@ -14,7 +14,7 @@ The infrastructure as a code let us define all of our infraestructure resources 
 The Infrastructure Provisioning tools let us create automated infraestructure through the interaction with different providers (AWS, GCP, AZURE, etc). For Example, we can create an EC2 instance, a S3 bucket or a Route53 DNS zone.
 Instead the Software Provisioning tools are the ones which configure and provision software inside the servers. For instance, the web server installation and configuration.
 
-**Herramientas:**
+**Tools:**
    * Infrastructure Provisioning:
         + Terraform
         + Cloudformation
@@ -27,16 +27,16 @@ Instead the Software Provisioning tools are the ones which configure and provisi
    * Building Custom Images
         + Packer
 
-Ejemplificando, podriamos crear una instancia EC2 con Terraform y luego, una vez creada, configurarla mediante un playbook ansible.
-Otra variante de software provisioning podria ser la creacion de una imagen con todas las configuraciones y software necesario utilizando Packer + Provisioner (ansible, etc) y luego realizar la creacion de una instancia con Terraform que utilice esta imagen.
+In example, we could create a EC2 instance with Terraform and then, once it is created, you should configure it by ansible playbook.
+Other way of software provisioning could be the creation of an image with all needed configurations and software using Packer + Provisioner (ansible, etc) and  then to make an EC2 instance deployment with Terraform using this image.
 
-En este workshop vamos a tratar estos 3 distintos tipos de aprovisionamiento.
-  * Infrastructure Provisioning (ej: Terraform)
-  * Infrastructure + Software Provisioning (ej: Terraform + Ansible)
-  * Build Custom Image + Infrastructure Provisioning (ej: Packer + Terraform).
+In this workshop, we are going to talk about 3 different types of provisioning.
+  * Infrastructure Provisioning (ie: Terraform)
+  * Infrastructure + Software Provisioning (ie: Terraform + Ansible)
+  * Build Custom Image + Infrastructure Provisioning (ie: Packer + Terraform).
 
 <br/>
-<a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform">Comenzar con Terraform</a>
+<a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform">Start with Terraform</a>
 <br/>
-<a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/packer">Comenzar con Packer</a>
+<a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/packer">Start with Packer</a>
 
