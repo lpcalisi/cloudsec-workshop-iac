@@ -12,5 +12,5 @@ terraform init
 terraform apply -var "MY_PUBLIC_IP_ADDRESS=$(curl ifconfig.me)/32"
 
 #get public ip assigned to instance
-terraform ooutput
+terraform output
 ``` 
