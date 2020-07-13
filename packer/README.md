@@ -4,7 +4,7 @@
 * Provisioning static site
 
 #### Requirements
-* AWS CLI configured and logged with permissions in AWS account
+* awscli configured and logged with permissions in AWS account
 * <a href="https://github.com/hashicorp/packer">Packer</a> installed
 
 ```
