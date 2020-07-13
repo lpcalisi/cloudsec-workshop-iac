@@ -21,7 +21,7 @@
   "provisioners": [{
     "type": "ansible",
     "user": "ubuntu",
-    "playbook_file": "ansible/ubuntu_nginx.yml"
+    "playbook_file": "../ansible/ubuntu_nginx.yml"
     }
   ]
 }
