@@ -6,7 +6,7 @@ The infrastructure as a code let us define all of our infraestructure resources 
    * It is auditable, easy to visualize its resources based on code definition.
    * It is versioned, being a code, we can upload it to github and keep our control versions.
    * It is replicable, easy to replicate in other environments.
-   * It is updated, we can ask for its current status of our resources in order to validate if its have been modified.
+   * It is updated, we can ask for the current status of our resources in order to validate if its have been modified.
    * It decreases human error, even though we can introduce bugs through the code, before applying the changes we will see which infrastructure components and properties will be modified.
 
 
