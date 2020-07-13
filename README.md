@@ -1,4 +1,4 @@
-# Que es IAC?
+# Que es IAC
 Actualmente, la mayoria de los usuarios levantan sus recursos manualmente, y esto genera algunos problemas a la hora de querer replicar la infraestructura o modificarla, con riesgos de introducir errores o de no tener en claro todos los recursos que la componen.
 La infraestructura como codigo, nos permite definir todos nuestros recursos de infraestructura y configuraciones de una manera automatizada, versionada y controlada.
 
@@ -27,7 +27,7 @@ En cambio, las herramientas de Software Provisioning se encargan de la configura
    * Building Custom Images
         + Packer
 
-Entonces, por ejemplo, podriamos crear una instancia EC2 con Terraform y luego, una vez creada, configurarla mediante un playbook ansible.
+Ejemplificando, podriamos crear una instancia EC2 con Terraform y luego, una vez creada, configurarla mediante un playbook ansible.
 Otra variante de software provisioning podria ser la creacion de una imagen con todas las configuraciones y software necesario utilizando Packer + Provisioner (ansible, etc) y luego realizar la creacion de una instancia con Terraform que utilice esta imagen.
 
 En esta breve introduccion, podemos distinguir 3 tipos de aprovisionamiento.
