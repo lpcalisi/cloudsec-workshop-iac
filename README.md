@@ -1,13 +1,13 @@
 # What is IAC
 Nowadays, most of the users create their infrastructure resources manually, it generates some problems when you want to replicate or modify the infrastructure, having the chance to enter errors or not knowing exactly wich resources form parts of it.
-La infraestructura como codigo, nos permite definir todos nuestros recursos de infraestructura y configuraciones de una manera automatizada, versionada y controlada.
+The infrastructure as a code let us define all of our infraestructure resources and configurations in an automated way, versioned and controlled.
 
-# Porque utilizar IAC?
-   * Auditable, facilidad para visualizar que recursos componen la infraestructura en base a la definicion del codigo.
-   * Versionado, al ser codigo, podemos subirlo a github y mantener nuestro control versiones.
-   * Replicable, facil de replicar en otros ambientes.
-   * Actualizada, podemos consultar el estado actual de nuestros recursos para validar si sufrieron modificaciones.
-   * Menos error humano, si bien podemos introducir fallas a traves del codigo, antes de aplicar los cambios veremos que componentes se modificaran y que propiedades de los mismos.
+# Why should we use IAC?
+   * It is auditable, easy to visualize its resources based on code definition.
+   * It is versioned, being a code, we can upload it to github and keep our control versions.
+   * It is replicable, easy to replicate in other environments.
+   * It is updated, we can ask for its current status of our resources in order to validate if its have been modified.
+   * It decreases human error, even though we can introduce bugs through the code, before applying the changes we will see which infrastructure components and properties will be modified.
 
 
 #### Diferencia entre herramientas de Infrastructure Provisioning y Software Provisioning:
