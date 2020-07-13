@@ -5,7 +5,8 @@
 * 1 - Create AWS Instance
 * 2 - Create AWS Instance with security group
 * 3 - Configure remote backend for terraform states
-* 4 - Getting data from external sources
+* 4 - Working with Terraform Workspaces
+* 5 - Getting data from external sources
 ### Requirements:
 * <a href="https://learn.hashicorp.com/terraform/getting-started/install.html">Install Terraform</a>
 * AWS Account
