@@ -10,9 +10,9 @@ The infrastructure as a code let us define all of our infraestructure resources 
    * It decreases human error, even though we can introduce bugs through the code, before applying the changes we will see which infrastructure components and properties will be modified.
 
 
-#### Diferencia entre herramientas de Infrastructure Provisioning y Software Provisioning:
-Las herramientas de Infrastructure Provisioning permiten la generacion automatizada de infraestructura a traves de la interaccion con diferentes providers (AWS, GCP, AZURE, etc). Nos permiten crear recursos de diferentes servicios ofrecidos, por ejemplo una instance EC2, un bucket de S3 o una zona DNS de Route53.
-En cambio, las herramientas de Software Provisioning se encargan de la configuracion y aprovisionamiento de software en servidores. Por ejemplo, la instalacion y configuracion de un servidor web.
+#### Difference beetween Infrastructure Provisioning and Software Provisioning tools:
+The Infrastructure Provisioning tools let us create automated infraestructure through the interaction with different providers (AWS, GCP, AZURE, etc). For Example, we can create an EC2 instance, a S3 bucket or a Route53 DNS zone.
+Instead the Software Provisioning tools are the ones which configure and provision software inside the servers. For instance, the web server installation and configuration.
 
 **Herramientas:**
    * Infrastructure Provisioning:
