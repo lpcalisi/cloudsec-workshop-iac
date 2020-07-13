@@ -31,6 +31,6 @@ Ejemplificando, podriamos crear una instancia EC2 con Terraform y luego, una vez
 Otra variante de software provisioning podria ser la creacion de una imagen con todas las configuraciones y software necesario utilizando Packer + Provisioner (ansible, etc) y luego realizar la creacion de una instancia con Terraform que utilice esta imagen.
 
 En esta breve introduccion, podemos distinguir 3 tipos de aprovisionamiento.
-    * Infrastructure Provisioning (ej: Terraform)
-    * Infrastructure + Software Provisioning (ej: Terraform + Ansible)
-    * Build Custom Image + Infrastructure Provisioning (ej: Packer + Terraform).
+  * Infrastructure Provisioning (ej: Terraform)
+  * Infrastructure + Software Provisioning (ej: Terraform + Ansible)
+  * Build Custom Image + Infrastructure Provisioning (ej: Packer + Terraform).
