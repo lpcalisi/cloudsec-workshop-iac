@@ -34,6 +34,9 @@ En este workshop vamos a tratar estos 3 distintos tipos de aprovisionamiento.
   * Infrastructure Provisioning (ej: Terraform)
   * Infrastructure + Software Provisioning (ej: Terraform + Ansible)
   * Build Custom Image + Infrastructure Provisioning (ej: Packer + Terraform).
-  
-Comenzar con Terraform
-Comenzar con Packer
+
+<br/>
+<a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform">Comenzar con Terraform</a>
+<br/>
+<a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/packer">Comenzar con Packer</a>
+
