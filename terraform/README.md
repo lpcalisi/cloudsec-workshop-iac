@@ -3,7 +3,6 @@ Terraform es una herramienta opensource desarollada por Hashicorp, nos permite d
 
 # Que vamos a ver en este workshop?
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/commands.md" >Terraform Commands</a>
-  * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/hcl.md" >HCL (Hashicorp Configuration Lenguaje)</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/variables.md" >Variables</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/providers.md" >Providers</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/status.md" >Status</a>
