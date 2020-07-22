@@ -60,8 +60,20 @@ Can be specified on `terraform plan` or `terraform apply`
 #### Variable Files
 We could define some files ending in either `.tfvars` or `.tfvars.json` to set predefined empty vars. It's very usefull for git ignore.
 This example file `terraform.tfvars` will set `secret` predefined empty variable. If you want to use another var file name, you could specify it with flag `-var-file=filepath` 
+
+###### .tfvars
 ```
 secret="THIS IS MY SECRET"
+```
+
+###### .tfvars.json
+```
+{
+  "tags": {
+    "team": "cloudsec",
+    "project": "workshop"
+  }
+}
 ```
 
 #### Environment Variables
