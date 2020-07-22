@@ -29,14 +29,6 @@ resource "aws_security_group" "test-ssh-connection" {
     cidr_blocks = [var.MY_PUBLIC_IP_ADDRESS]
   }
 
-  ingress {
-    description = "HTTP from my pc"
-    from_port   = 80
-    to_port     = 80
-    protocol    = "tcp"
-    cidr_blocks = [var.MY_PUBLIC_IP_ADDRESS]
-  }
-
   egress {
     from_port   = 0
     to_port     = 0
