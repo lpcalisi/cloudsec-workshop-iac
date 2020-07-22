@@ -67,6 +67,6 @@ secret="THIS IS MY SECRET"
 #### Environment Variables
 Terraform could get all enviroments variables that named `TF_VAR` followed the name of the declared variable
 ```
-export TF_VAR_myvar=example
+export TF_VAR_secret="THIS IS MY SECRET"
 ```
 <a href="https://www.terraform.io/docs/configuration/variables.html">Terraform Documentation </a>
