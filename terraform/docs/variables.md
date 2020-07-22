@@ -70,5 +70,6 @@ Terraform could get all enviroments variables that named `TF_VAR` followed the n
 export TF_VAR_secret="THIS IS MY SECRET"
 ```
 
+<br>
 For more docs ->
 <a href="https://www.terraform.io/docs/configuration/variables.html">Terraform Variables Documentation</a>
