@@ -127,7 +127,7 @@ resource "aws_security_group" "test-ssh-connection" {
         },
         {
             cidr_blocks      = [
-                "190.210.146.233/32",
+                "200.210.220.110/32",
             ]
             description      = "SSH from my pc"
             from_port        = 22
@@ -185,6 +185,9 @@ aws_security_group.test-ssh-connection
 
 
 For more docs:
- * <a href="https://www.terraform.io/docs/state/index.html"> Terraform State </a>
- * <a href="https://www.terraform.io/docs/backends/types/local.html"> Terraform Local </a>
- * <a href="https://www.terraform.io/docs/backends/types/remote.html"> Terraform Remote </a>
+
+ &rarr; <a href="https://www.terraform.io/docs/state/index.html"> Terraform State </a>
+ 
+ &rarr; <a href="https://www.terraform.io/docs/backends/types/local.html"> Terraform Local </a>
+ 
+ &rarr; <a href="https://www.terraform.io/docs/backends/types/remote.html"> Terraform Remote </a>
