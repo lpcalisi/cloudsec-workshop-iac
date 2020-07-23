@@ -14,3 +14,13 @@ foo@bar:~$ terraform apply -var "MY_PUBLIC_IP_ADDRESS=$(curl ifconfig.me)/32"
 #get public ip assigned to instance
 foo@bar:~$ terraform output
 ``` 
+
+#### After applied, you should see the next output. 
+<image src="https://github.com/lpcalisi/cloudsec-workshop-iac/blob/master/terraform/2_instance_with_sg/images/applied.png">
+  
+
+### Its everything works ok, only your home public ip adress should be get access to the instance.
+
+#### Try it!
+
+<image src="https://github.com/lpcalisi/cloudsec-workshop-iac/blob/master/terraform/2_instance_with_sg/images/ssh.gif">
