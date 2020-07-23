@@ -4,6 +4,7 @@ Terraform is an open-source tool created by Hashicorp, it let us declare a certa
 # What are you going to learn in this workshop?
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/commands.md" >Terraform Commands</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/variables.md" >Variables</a>
+    * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/1_variables">Demo 1</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/providers.md" >Providers</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/resources.md" >Resources</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/datasources.md" >Data Sources</a>
