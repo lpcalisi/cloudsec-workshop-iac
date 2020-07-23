@@ -181,7 +181,7 @@ aws_security_group.test-ssh-connection
 ```
 
 
-**IMPORTANT: either `terraform refresh` or `terraform import` update the changes only on the states, its not added the statements to your terraform files. If you want it, you should add it by hand based on state.**
+**:warning: IMPORTANT: either `terraform refresh` or `terraform import` update the changes only on the states, its not added the statements to your terraform files. If you want it, you should add it by hand based on state.**
 
 
 For more docs:
