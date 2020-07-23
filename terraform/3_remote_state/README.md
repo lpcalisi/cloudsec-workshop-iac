@@ -1,3 +1,6 @@
-# First Steps: Set remote backend for save and get terraform status
+# Remotes State
 
-#### Create S3 bucket and set remote backend to save all terraform state.
+### Set S3 bucket as remote backend for save and get terraform state
+
+---
+## *Creating S3 bucket*
