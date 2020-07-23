@@ -1,5 +1,5 @@
 # Terraform Workshop
-Terraform is an open-source tool created by Hashicorp, it could us declare a certain state trought code (HCL) and terraform will try to keep it. Terraform is not limited to a single provider.
+Terraform is an open-source tool created by Hashicorp, it let us declare a certain state with code (HCL) in order to keep that state troughtout the development process. Terraform is not limited to a single provider.
 
 # What are you going to learn in this workshop?
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/commands.md" >Terraform Commands</a>
