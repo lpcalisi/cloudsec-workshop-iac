@@ -64,4 +64,4 @@ Resource instance aws_security_group.test-ssh-connection has been successfully u
 ```
 
 
-For more docs -> <a href="https://www.terraform.io/docs/configuration/resources.html"> Terraform Resources </a>
+For more docs &rarr; <a href="https://www.terraform.io/docs/configuration/resources.html"> Terraform Resources </a>
