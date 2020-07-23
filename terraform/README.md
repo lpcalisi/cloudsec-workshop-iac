@@ -5,9 +5,9 @@ Terraform is an open-source tool created by Hashicorp, it could us declare a cer
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/commands.md" >Terraform Commands</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/variables.md" >Variables</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/providers.md" >Providers</a>
-  * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/status.md" >State</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/resources.md" >Resources</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/datasources.md" >Data Sources</a>
+  * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/status.md" >State</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/workspaces.md" >Workspaces</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/templates.md" >Templates</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/modules.md" >Modules</a>
