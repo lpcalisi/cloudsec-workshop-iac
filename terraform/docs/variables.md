@@ -16,7 +16,7 @@ Allow specify more complex types such as collections
 
 
 #### Examples:
-```
+```hcl
 # simple variable
 variable "mystring" {
   type    = string
@@ -46,15 +46,15 @@ variable "complex" {
 
 ### Other assign variables ways
 Anyway, we need to define the vars empty into root module like
-```
+```hcl
   variable "variableName" {}
 ```
 #### On the command line
 Can be specified on `terraform plan` or `terraform apply`
-```
-  terraform apply -var="image_id=ami-abc123"
-  terraform apply -var='image_id_list=["ami-abc123","ami-def456"]'
-  terraform apply -var='image_id_map={"us-east-1":"ami-abc123","us-east-2":"ami-def456"}'
+```console
+foo$bar:~$ terraform apply -var="image_id=ami-abc123"
+foo$bar:~$ terraform apply -var='image_id_list=["ami-abc123","ami-def456"]'
+foo$bar:~$ terraform apply -var='image_id_map={"us-east-1":"ami-abc123","us-east-2":"ami-def456"}'
 ```
 
 #### Variable Files
@@ -62,12 +62,12 @@ We could define some files ending in either `.tfvars` or `.tfvars.json` to set p
 This example file `terraform.tfvars` will set `secret` predefined empty variable. If you want to use another var file name, you could specify it with flag `-var-file=filepath` 
 
 ###### .tfvars
-```
+```hcl
 secret="THIS IS MY SECRET"
 ```
 
 ###### .tfvars.json
-```
+```json
 {
   "tags": {
     "team": "cloudsec",
@@ -78,7 +78,7 @@ secret="THIS IS MY SECRET"
 
 #### Environment Variables
 Terraform could get all enviroments variables that named `TF_VAR` followed the name of the declared variable
-```
+```console
 export TF_VAR_secret="THIS IS MY SECRET"
 ```
 
