@@ -7,9 +7,14 @@ Terraform is an open-source tool created by Hashicorp, it let us declare a certa
     * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/0_variables">Demo 0</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/providers.md" >Providers</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/resources.md" >Resources</a>
+    * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/1_create_instance_basic">Demo 1</a>
+    * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/2_instance_with_sg">Demo 2</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/datasources.md" >Data Sources</a>
+    * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/5_data_sources">Demo 5</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/status.md" >State</a>
+    * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/3_remote_state">Demo 3</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/workspaces.md" >Workspaces</a>
+    * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/4_workspaces">Demo 4</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/projectsStructures.md" >Project Structure</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/modules.md" >Modules</a>
 
