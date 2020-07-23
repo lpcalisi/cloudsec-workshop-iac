@@ -1,15 +1,15 @@
 # First Steps: Create AWS Instance 
 
-```
+```console
 #download and init providers plugins
-terraform init
+foo@bar:~$ terraform init
 
 #view deploy plan
-terraform plan
+foo@bar:~$ terraform plan
 
 #deploy new instance
-terraform apply
+foo@bar:~$ terraform apply
 
 #delete instance
-terraform destroy
+foo@bar:~$ terraform destroy
 ``` 
