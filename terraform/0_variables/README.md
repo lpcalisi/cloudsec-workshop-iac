@@ -12,5 +12,5 @@ variable "name" {
 
 #### Common Var
 
-![](https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/0_variables/gif/common_var.gif)
+![](https://github.com/lpcalisi/cloudsec-workshop-iac/blob/master/terraform/0_variables/gif/common_var.gif)
 
