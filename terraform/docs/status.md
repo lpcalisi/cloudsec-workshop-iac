@@ -15,7 +15,7 @@ Terraform has two ways to manage states.
  
 Usually remote states are defined in the `backend.tf`. If not terraform `terraform {}` is defined the state will be stored locally. 
 
- ```
+ ```hcl
  terraform {
   backend "s3" {
     bucket = "workshop-terraform-cloudsec-states"
@@ -33,15 +33,15 @@ Run `terraform fmt` before commit new change on your terraform files its a good 
 
 * #### terraform show
 Get list of all resources in state
-````
-$ terraform state list
+````console
+foo@bar:~$ terraform state list
 aws_instance.test
 aws_key_pair.test_key
 aws_security_group.test-ssh-connection
 ````
 
 Show all properties about a resource
-````
+```hcl
 $ terraform state show aws_instance.test
 # aws_instance.test:
 resource "aws_instance" "test" {
@@ -52,17 +52,18 @@ resource "aws_instance" "test" {
     ...
     ...
 }
-````
+```
+* #### terraform state mv
 Rename a resource
-````
+```
 $ terraform state mv aws_instance.test aws_instance.example
 Move "aws_instance.test" to "aws_instance.example"
 Successfully moved 1 object(s).
-````
+```
 * #### terraform refresh
 For this example, i had modified the resource `aws_security_group.test-ssh-connection` manually adding ingress rule with example CIDR `123.123.123.123/32` 
 ###### original security group
-````
+```
 $ terraform state show aws_security_group.test-ssh-connection
 # aws_security_group.test-ssh-connection:
 resource "aws_security_group" "test-ssh-connection" {
@@ -87,17 +88,17 @@ resource "aws_security_group" "test-ssh-connection" {
    ...
    ...
 }
-`````
+```
 ###### refresh
-`````
+```
 $ terraform refresh
 aws_key_pair.test_key: Refreshing state... [id=test-workshop-iac-key]
 aws_security_group.test-ssh-connection: Refreshing state... [id=sg-00b218dd65fbabd8c]
 aws_instance.example: Refreshing state... [id=i-0ed06b9901833678c]
-`````
+````
 
 ###### after refresh
-`````
+```
 $ terraform state show aws_security_group.test-ssh-connection
 # aws_security_group.test-ssh-connection:
 resource "aws_security_group" "test-ssh-connection" {
@@ -133,7 +134,7 @@ resource "aws_security_group" "test-ssh-connection" {
         },
     ...
 }
-`````
+```
 We could view the resource with the ingress security group added. For backup, terraform will create another backup with the previous state.
 
 * #### terraform import
@@ -150,7 +151,7 @@ aws_security_group.test-ssh-connection
 ````
 
 Import existing S3 bucket
-````
+```
 $ terraform import aws_s3_bucket.example workshop-terraform-cloudsec-states
 
 aws_s3_bucket.example: Importing from ID "workshop-terraform-cloudsec-states"...
@@ -165,13 +166,13 @@ your Terraform state and will henceforth be managed by Terraform.
 ````
 
 Now, you have the S3 bucket with all its properties
-````
+```
 $ terraform state list
 aws_instance.test
 aws_key_pair.test_key
 aws_s3_bucket.example
 aws_security_group.test-ssh-connection
-````
+```
 
 
 **IMPORTANT: either `terraform refresh` or `terraform import` update the changes only on the states, its not added the statements to your terraform files. If you want it, you should add it by hand based on state.**
