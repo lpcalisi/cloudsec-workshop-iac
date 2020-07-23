@@ -25,4 +25,4 @@ All of this commands must be preceded by `terraform`
 | workspace| Environment management                                                                                                   |
 
 
-For more docs -> <a href="https://www.terraform.io/docs/commands/index.html"> Terraform Commands </a>
+For more docs &rarr; <a href="https://www.terraform.io/docs/commands/index.html"> Terraform Commands </a>
