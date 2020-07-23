@@ -1,4 +1,4 @@
-# Remotes State
+# Remote State
 
 #### Set S3 bucket as remote backend for save and get terraform state
 
