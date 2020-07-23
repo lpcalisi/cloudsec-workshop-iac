@@ -15,8 +15,24 @@ Terraform resources are the componentes that we can created, update or modify.
 ````
 * Each resource will have many available properties, you could use it as input of other resources or deploy's output.
 
-   Example:
-   
+   e.g:
+    
+     Reference security group id to EC2 Instance
+     ````
+     resource "aws_instance" "test" {
+       ami             = var.AMIS[var.AWS_REGION]
+       instance_type   = "t2.micro"
+       subnet_id       = var.VPCS[var.AWS_REGION]["SUBNET"]
+       key_name        = aws_key_pair.test_key.key_name
+       security_groups = [aws_security_group.test-ssh-connection.id]
+
+       tags = {
+         "team"    = "cloudsec"
+         "project" = "workshop-iac"
+       }
+     }
+     ````
+     
      Output public ip from EC2 instance. This variable will be available in `terraform output`
      ````
       output "external_ip" {
@@ -30,6 +46,20 @@ You can view resource example and relations beetween it in <a href="https://gith
 * terraform [plan, apply, destroy] for a specific resource
 ````
 terraform plan -target=aws_s3_bucket.example
+````
+
+* terraform taint address
+Mark resource as tainted means that it will be destroyed and created again at the next apply. 
+````
+$ terraform taint aws_security_group.test-ssh-connection
+Resource instance aws_security_group.test-ssh-connection has been marked as tainted.
+````
+
+* terraform untaint address
+Undo taint
+````
+$ terraform untaint aws_security_group.test-ssh-connection
+Resource instance aws_security_group.test-ssh-connection has been successfully untainted.
 ````
 
 
