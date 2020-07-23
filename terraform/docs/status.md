@@ -40,7 +40,7 @@ aws_key_pair.test_key
 aws_security_group.test-ssh-connection
 ````
 
-Show all properties about one resource
+Show all properties about a resource
 ````
 $ terraform state show aws_instance.test
 # aws_instance.test:
@@ -53,7 +53,7 @@ resource "aws_instance" "test" {
     ...
 }
 ````
-Rename resource
+Rename a resource
 ````
 $ terraform state mv aws_instance.test aws_instance.example
 Move "aws_instance.test" to "aws_instance.example"
