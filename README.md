@@ -5,7 +5,7 @@
 2. [IAC Benefits](#why-should-we-use-iac)
 3. [Infrastructure Provisioning vs Software Provisioning](#difference-beetween-infrastructure-provisioning-and-software-provisioning-tools)
 4. [Tools](#tools)
-5. [Start Workshop](#start_workshop)
+5. [Start Workshop](#start-workshop)
 
 ### What is IAC?
 Nowadays, most of the users create their infrastructure resources manually, it brings problems when you want to replicate or modify the infrastructure, having the chance to enter errors or not knowing exactly wich resources form parts of it.
@@ -47,7 +47,7 @@ In this workshop, we are going to talk about 3 different types of provisioning.
 <br/>
 
 ### Start Workshop
-<a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform">Start with Terraform</a>
+<a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform">Terraform</a>
 <br/>
-<a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/packer">Start with Packer</a>
+<a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/packer">Packer</a>
 
