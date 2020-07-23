@@ -15,12 +15,14 @@ Terraform resources are the componentes that we can created, update or modify.
 ````
 * Each resource will have many available properties, you could use it as input of other resources or deploy's output.
 
-    Example output public ip from EC2 instance. This variable will be available in `terraform output`
-    ````
-     output "external_ip" {
-      value = "${aws_instance.test.public_ip}"
-    }
-    ````
+   Example:
+   
+     Output public ip from EC2 instance. This variable will be available in `terraform output`
+     ````
+      output "external_ip" {
+       value = "${aws_instance.test.public_ip}"
+     }
+     ````
 
 You can view resource example and relations beetween it in <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/2_instance_with_sg">demo 2</a>
 
