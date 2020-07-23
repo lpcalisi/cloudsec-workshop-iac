@@ -41,8 +41,10 @@ aws_security_group.test-ssh-connection
 ````
 
 Show all properties about a resource
+```console
+foo@bar:~$ terraform state show aws_instance.test
+```
 ```hcl
-$ terraform state show aws_instance.test
 # aws_instance.test:
 resource "aws_instance" "test" {
     ami                          = "ami-0f9c9884b78c1a3f6"
@@ -55,16 +57,16 @@ resource "aws_instance" "test" {
 ```
 * #### terraform state mv
 Rename a resource
-```
-$ terraform state mv aws_instance.test aws_instance.example
+```console
+foo@bar:~$ terraform state mv aws_instance.test aws_instance.example
 Move "aws_instance.test" to "aws_instance.example"
 Successfully moved 1 object(s).
 ```
 * #### terraform refresh
 For this example, i had modified the resource `aws_security_group.test-ssh-connection` manually adding ingress rule with example CIDR `123.123.123.123/32` 
 ###### original security group
-```
-$ terraform state show aws_security_group.test-ssh-connection
+```hcl
+foo@bar:~$ terraform state show aws_security_group.test-ssh-connection
 # aws_security_group.test-ssh-connection:
 resource "aws_security_group" "test-ssh-connection" {
     ...
