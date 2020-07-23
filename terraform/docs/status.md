@@ -26,7 +26,7 @@ Usually remote states are defined in the `backend.tf`. If not terraform `terrafo
  ```
  
 #### Other usefull operations
-For show these operations, we use existing <a href="https://raw.githubusercontent.com/lpcalisi/cloudsec-workshop-iac/master/terraform/2_instance_with_sg/terraform.tfstate">terraform.tfstate</a> saved into demo 3
+For show these operations, we use existing <a href="https://raw.githubusercontent.com/lpcalisi/cloudsec-workshop-iac/master/terraform/2_instance_with_sg/terraform.tfstate">terraform.tfstate</a> saved into demo 2
 
 * #### terraform show
 Get list of all resources in state
