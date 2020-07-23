@@ -18,16 +18,12 @@ foo@bar:~$ terraform workspace new ${WORKSPACE_NAME}
 foo@bar:~$ terraform workspace select ${WORKSPACE_NAME}
 ```
 
-### How terraform save states for many workspaces?
-Terraform 
-#### Local States
-Terraform creates the folder named terraform.tfstate.d and one folder by workspace inside of it.
-```console
-  terraform.tfstate.d/${WORKSPACE_NAME}/terraform.tfstate
-```
+---
 
-#### Remote States
-For example, in a S3 bucket, Terraform creates the folder named :env and one folder by workspace inside of it. Finally, terraform saves the status on the s3 key defined.
-```console
-  ${S3_BUCKET_NAME}/:env/${WORKSPACE_NAME}/${KEY}
-```
+#### 1. *Set bucket name in `backend.tf`*
+<image src="https://github.com/lpcalisi/cloudsec-workshop-iac/blob/master/terraform/3_remote_state/images/set_backend.gif">
+
+
+#### 2. *Run `terraform init` to inicilizate the backend.
+<image src="https://github.com/lpcalisi/cloudsec-workshop-iac/blob/master/terraform/3_remote_state/images/tf_init.png">
+
