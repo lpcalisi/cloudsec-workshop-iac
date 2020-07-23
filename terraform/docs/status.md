@@ -161,6 +161,7 @@ The resources that were imported are shown above. These resources are now in
 your Terraform state and will henceforth be managed by Terraform.
 ````
 
+Now, you have the S3 bucket with all its properties
 ````
 $ terraform state list
 aws_instance.test
@@ -170,7 +171,6 @@ aws_security_group.test-ssh-connection
 ````
 
 
-
-
+**IMPORTANT: either `terraform refresh` or `terraform import` update the changes only on the states, its not added the statements to your terraform files. If you want it, you should add it by hand based on state.**
 
  
