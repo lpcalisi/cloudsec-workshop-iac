@@ -28,4 +28,7 @@ foo@bar:~$ terraform workspace select ${WORKSPACE_NAME}
 
 #### 3. *Run `terraform init` to inicilizate the backend.*
 <image src="https://github.com/lpcalisi/cloudsec-workshop-iac/blob/master/terraform/4_workspaces/images/tf_init.png">
+  
+#### 4. *After init, terraform creates terraform.tfstate in S3 bucket.*
+<image src="https://github.com/lpcalisi/cloudsec-workshop-iac/blob/master/terraform/4_workspaces/images/list_backend.gif">
 
