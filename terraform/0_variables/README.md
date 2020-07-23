@@ -10,5 +10,5 @@ variable "name" {
 
 ``` 
 
-#### Understanding variables reference using `terraform console
+#### Understanding variables reference using `terraform console` 
 <img src="https://github.com/lpcalisi/cloudsec-workshop-iac/blob/master/terraform/0_variables/gif/tfconsole.gif" />
