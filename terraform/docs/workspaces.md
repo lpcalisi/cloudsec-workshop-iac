@@ -9,5 +9,29 @@ Terraform Workspaces allow to create us differents environments from the same co
   
 
 
+* How we could manage workspaces?
+When you run `terraform init`, by default creates workspace named `default`
 
-* How we can create new workspaces?
+  *Create new workspace*
+  ```console
+  foo@bar:~$ terraform workspace new prod
+  Created and switched to workspace "prod"!
+
+  You're now on a new, empty workspace. Workspaces isolate their state,
+  so if you run "terraform plan" Terraform will not see any existing state
+  for this configuration.
+  ```
+  
+  *List workspaces*
+  ````console
+  foo@bar:~$ terraform workspace list
+  default
+  prod
+  ````
+  
+  *Select workspace*
+  ````console
+  foo@bar:~$ terraform workspace select prod
+  Switched to workspace "prod".
+  ````
+
