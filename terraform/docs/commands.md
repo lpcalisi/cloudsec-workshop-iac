@@ -22,3 +22,6 @@ All of this commands must be preceded by `terraform`
 | taint    | Mark resource and tainted, it will be destructed and recreated at the next apply                                         |
 | untaint  | undo a taint                                                                                                             |
 | validate | Syntax validation                                                                                                        |
+
+
+For more docs -> <a href="https://www.terraform.io/docs/commands/index.html"> Terraform Commands </a>
