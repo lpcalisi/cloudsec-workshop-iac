@@ -10,7 +10,6 @@ Terraform is an open-source tool created by Hashicorp, it let us declare a certa
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/status.md" >State</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/workspaces.md" >Workspaces</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/projectsStructures.md" >Project Structure</a>
-  * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/templates.md" >Templates</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/modules.md" >Modules</a>
 
 ### What do you need to do this workshop?
