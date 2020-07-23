@@ -39,7 +39,7 @@ variable "complex" {
       "subkey1" : "subvalue1",
       "subkey2" : "subvalue1"
     },
-    "type" : "value2"
+    "type2" : "value2"
   }
 }
 ``` 
