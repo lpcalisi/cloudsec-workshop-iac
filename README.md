@@ -47,7 +47,6 @@ In this workshop, we are going to talk about 3 different types of provisioning.
 <br/>
 
 ### Start Workshop
-<a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform">Terraform</a>
-<br/>
-<a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/packer">Packer</a>
+* <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform">Terraform</a>
+* <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/packer">Packer</a>
 
