@@ -1,7 +1,7 @@
 # Providers
 #### Terraform supports a lot of providers and it is generally IaaS, PaaS or SaaS. It's used to create and manage resources.
 
-e.g:
+ie:
 ```hcl
 provider "grafana" {
   url  = "http://grafana.example.com/"
