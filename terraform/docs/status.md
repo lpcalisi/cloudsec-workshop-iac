@@ -28,6 +28,9 @@ Usually remote states are defined in the `backend.tf`. If not terraform `terrafo
 #### Other usefull operations
 For show these operations, we use existing <a href="https://raw.githubusercontent.com/lpcalisi/cloudsec-workshop-iac/master/terraform/2_instance_with_sg/terraform.tfstate">terraform.tfstate</a> saved into demo 2
 
+* #### terraform fmt
+Run `terraform fmt` before commit new change on your terraform files its a good practice for avoid fakes differences in version control.
+
 * #### terraform show
 Get list of all resources in state
 ````
@@ -173,4 +176,8 @@ aws_security_group.test-ssh-connection
 
 **IMPORTANT: either `terraform refresh` or `terraform import` update the changes only on the states, its not added the statements to your terraform files. If you want it, you should add it by hand based on state.**
 
- 
+
+For more docs:
+ * <a href="https://www.terraform.io/docs/state/index.html"> Terraform State </a>
+ * <a href="https://www.terraform.io/docs/backends/types/local.html"> Terraform Local </a>
+ * <a href="https://www.terraform.io/docs/backends/types/remote.html"> Terraform Remote </a>
