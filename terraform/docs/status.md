@@ -133,7 +133,7 @@ resource "aws_security_group" "test-ssh-connection" {
 `````
 We could view the resource with the ingress security group added. For backup, terraform will create another backup with the previous state.
 
-* #### terraform import
+* #### terraform import
 Import an existing S3 bucket, each resource has it own specification about how must be imported at the end of <a href="https://www.terraform.io/docs/providers/aws/r/s3_bucket.html"> Terraform AWS S3</a>.
 
 Previusly, you need to define empty resource in your terraform statements such as `resource aws_s3_bucket.example {}`
