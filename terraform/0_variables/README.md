@@ -10,8 +10,5 @@ variable "name" {
 
 ``` 
 
-#### Common Var
-<img src="https://github.com/lpcalisi/cloudsec-workshop-iac/blob/master/terraform/0_variables/gif/common_var.gif" />
-
 #### Terraform Console
 <img src="https://github.com/lpcalisi/cloudsec-workshop-iac/blob/master/terraform/0_variables/gif/tfconsole.gif" />
