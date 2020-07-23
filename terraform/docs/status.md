@@ -24,3 +24,11 @@ Usually remote states are defined in the `backend.tf`. If not terraform `terrafo
   }
 }
  ```
+ 
+#### Other usefull operations
+
+##### terraform show
+
+##### terraform refresh
+
+ 
