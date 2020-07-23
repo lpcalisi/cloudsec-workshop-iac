@@ -37,6 +37,9 @@ When you run `terraform init`, by default creates workspace named `default`
   ````
 
 #### How do terraform manage states with workspaces?
-When you create new workspace and make a deploy on it, by default terraform reorganice the states in a new path named `terraform.tfstate.d/{workspace}/terraform.tfstate``
+When you create new workspace and make a deploy on it, by default terraform reorganice the states in a new path named `terraform.tfstate.d/{workspace}/terraform.tfstate`. This approuch is for local state.
+
+For remote state, not all backends types support multiple workspaces. For view all supported backends -> <a href="https://www.terraform.io/docs/state/workspaces.html"> Terraform Workspace </a>
+
 
 
