@@ -79,7 +79,7 @@ secret="THIS IS MY SECRET"
 #### Environment Variables
 Terraform could get all enviroments variables that named `TF_VAR` followed the name of the declared variable
 ```console
-export TF_VAR_secret="THIS IS MY SECRET"
+foo$bar:~$ export TF_VAR_secret="THIS IS MY SECRET"
 ```
 
 <br>
