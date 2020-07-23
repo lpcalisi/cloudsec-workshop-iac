@@ -19,7 +19,7 @@ All of this commands must be preceded by `terraform`
 | remote   | Configure remote state storage                                                                                           |
 | show     | Show human readable output from state or plan                                                                            |
 | state    | Use it for advanced state management, e.g. Rename a resource `terraform state mv aws_instance.example aws_instance.prod` |
-| taint    | Mark resource and tainted, it will be destructed and recreated at the next apply                                         |
+| taint    | Mark resource as tainted, it will be destructed and recreated at the next apply                                         |
 | untaint  | undo a taint                                                                                                             |
 | validate | Syntax validation                                                                                                        |
 | workspace| Environment management                                                                                                   |
