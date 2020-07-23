@@ -3,7 +3,13 @@
 
 #### In the other hand, we could write our own custom providers in `golang` for example to manage our own private cloud.
 
-
+e.g:
+```hcl
+provider "grafana" {
+  url  = "http://grafana.example.com/"
+  auth = "1234abcd"
+}
+```
 <br>
 Guide for write custom providers -> <a href="https://www.terraform.io/docs/extend/writing-custom-providers.html"> Terraform Write Custom Providers </a>
 
