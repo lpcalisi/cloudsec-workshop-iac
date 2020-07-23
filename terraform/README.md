@@ -13,10 +13,12 @@ Terraform is an open-source tool created by Hashicorp, it let us declare a certa
     * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/5_data_sources">Demo 5</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/status.md" >State</a>
     * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/3_remote_state">Demo 3</a>
+    * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/6_importing_existing_resources">Demo 6</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/workspaces.md" >Workspaces</a>
     * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/4_workspaces">Demo 4</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/projectsStructures.md" >Project Structure</a>
   * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/docs/modules.md" >Modules</a>
+    * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/7_s3_static_site/">Demo 6</a>
 
 ### What do you need to do this workshop?
 * <a href="https://learn.hashicorp.com/terraform/getting-started/install.html">Install Terraform</a>
