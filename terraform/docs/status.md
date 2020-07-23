@@ -65,8 +65,10 @@ Successfully moved 1 object(s).
 * #### terraform refresh
 For this example, i had modified the resource `aws_security_group.test-ssh-connection` manually adding ingress rule with example CIDR `123.123.123.123/32` 
 ###### original security group
-```hcl
+```console
 foo@bar:~$ terraform state show aws_security_group.test-ssh-connection
+```
+```hcl
 # aws_security_group.test-ssh-connection:
 resource "aws_security_group" "test-ssh-connection" {
     ...
@@ -92,16 +94,18 @@ resource "aws_security_group" "test-ssh-connection" {
 }
 ```
 ###### refresh
-```
-$ terraform refresh
+```console
+foo@bar:~$ terraform refresh
 aws_key_pair.test_key: Refreshing state... [id=test-workshop-iac-key]
 aws_security_group.test-ssh-connection: Refreshing state... [id=sg-00b218dd65fbabd8c]
 aws_instance.example: Refreshing state... [id=i-0ed06b9901833678c]
 ````
 
 ###### after refresh
+```console
+foo@bar:~$ terraform state show aws_security_group.test-ssh-connection
 ```
-$ terraform state show aws_security_group.test-ssh-connection
+```hcl
 # aws_security_group.test-ssh-connection:
 resource "aws_security_group" "test-ssh-connection" {
     ...
@@ -145,16 +149,16 @@ Import an existing S3 bucket, each resource has it own specification about how m
 Previusly, you need to define empty resource in your terraform statements such as `resource aws_s3_bucket.example {}`
 
 List actual resources
-````
-$ terraform state list
+````console
+foo@bar:~$ terraform state list
 aws_instance.test
 aws_key_pair.test_key
 aws_security_group.test-ssh-connection
 ````
 
 Import existing S3 bucket
-```
-$ terraform import aws_s3_bucket.example workshop-terraform-cloudsec-states
+```console
+foo@bar:~$ terraform import aws_s3_bucket.example workshop-terraform-cloudsec-states
 
 aws_s3_bucket.example: Importing from ID "workshop-terraform-cloudsec-states"...
 aws_s3_bucket.example: Import prepared!
@@ -168,8 +172,8 @@ your Terraform state and will henceforth be managed by Terraform.
 ````
 
 Now, you have the S3 bucket with all its properties
-```
-$ terraform state list
+```console
+foo@bar:~$ terraform state list
 aws_instance.test
 aws_key_pair.test_key
 aws_s3_bucket.example
