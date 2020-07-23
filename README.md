@@ -9,7 +9,7 @@
 
 ### What is IAC?
 Nowadays, most of the developers create their infrastructure resources manually, it brings problems when you want to replicate or modify the infrastructure, having the chance to enter errors or not knowing exactly wich resources form parts of it.
-The infrastructure as a code let us define all of our infraestructure resources and configurations in an automated way, versioned and controlled.
+The infrastructure as code let us define all of our infraestructure resources and configurations in an automated way, versioned and controlled.
 
 ### Why should we use IAC?
    * It is auditable, easy to visualize its resources based on code definition.
