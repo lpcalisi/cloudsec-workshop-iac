@@ -9,7 +9,8 @@ Terraform Workspaces allow to create us differents environments from the same co
   
 
 
-* How we could manage workspaces?
+#### How could we manage workspaces?
+
 When you run `terraform init`, by default creates workspace named `default`
 
   *Create new workspace*
@@ -34,4 +35,8 @@ When you run `terraform init`, by default creates workspace named `default`
   foo@bar:~$ terraform workspace select prod
   Switched to workspace "prod".
   ````
+
+#### How do terraform manage states with workspaces?
+When you create new workspace and make a deploy on it, by default terraform reorganice the states in a new path named `terraform.tfstate.d/{workspace}/terraform.tfstate``
+
 
