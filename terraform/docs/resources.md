@@ -3,7 +3,8 @@
 Terraform resources are the componentes that we can created, update or modify.
 
 * For define resources, we need to had provider defined
-  * Provider should be initialized `terraform init
+  * Provider should be initialized `terraform init`
+ 
 * Resource definition syntax
   * You can`t use the same name for the same resource type
 ````
