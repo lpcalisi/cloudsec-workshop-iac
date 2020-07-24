@@ -16,5 +16,16 @@ In the future, it would be usefull add to serve the websites with a CDN and supp
 
 
 
-* *First, you need set your S3 bucket in `backend.tf` like you did the previous demos.*
-* 
+* *Set up your S3 bucket in `backend.tf` like you did the previous demos.*
+* *Create a new folder with the `domain name` and copy all your websites files inside it*
+* *Make deployment with deploy.sh*
+  ```console
+  foo$bar:~$ ./deploy.sh -h
+  OPTIONS
+    -a=<action>: terraform action
+    -d=<domain>: domain name
+    -t=<tags>: tags for s3 bucket
+
+  EXAMPLE
+    host_s3_public_static_site.sh -a=apply -d=example.com -t='{key:value}'
+  ```
