@@ -1,4 +1,4 @@
-# Terraform Workshop
+<image src="https://camo.githubusercontent.com/591488bbda6eb486fada506b2af06fe5e645c3ae/68747470733a2f2f7777772e7465727261666f726d2e696f2f6173736574732f696d616765732f6c6f676f2d6861736869636f72702d33663130373332662e737667">
 Terraform is an open-source tool created by Hashicorp, it let us declare a certain state with code (HCL) in order to keep that state troughtout the development process. Terraform is not limited to a single provider.
 
 # What are you going to learn in this workshop?
