@@ -5,11 +5,11 @@ Terraform has two ways to manage states.
 
 #### Local State
  * By default, terraform creates a `terraform.tfstate` file in the root modules's path which holds all the data of your states. Additionally, a second file  `terraform.tfstate.backup` saves the previous state. If you want to define your own terraform state file path, you can do so with the flag `-state=path`
- * Local state is generally used for little / medium sized projects. You could save it in github for version controlling.
+ * Local state is generally used for little sized projects. You could save it in github for version controlling.
  * One disadvantage, it's that we all have to be sure to have the latest version of the state.
 
 #### Remote State
-  * Remote states are generally used in large scale projects. Since it always avaiable and updated. Every developer used the same file which can be hosted in a common place.
+  * Remote states are generally used in medium / large scale projects. Since it always avaiable and updated. Every developer used the same file which can be hosted in a common place.
   * You need to provide the remote storage manually, it's not posible to create it with terraform within the same project.
   * You need to have access to the remote storage such as AWS S3 or GCS (Google Cloud Storage).
  
