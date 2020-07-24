@@ -2,7 +2,7 @@
 
 usage ()
 {
-  echo 'Usage : host_s3_public_static_site.sh a=<ation> -d=<domain> -t=<tags>'
+  echo 'Usage : host_s3_public_static_site.sh a=<ation> -d=<domain> -t=<tags> -y <creates workspace if not exists>'
   echo 'Usage : host_s3_public_static_site.sh -h <help'
   exit
 }
@@ -18,9 +18,10 @@ echo "OPTIONS
 	-a=<action>: terraform action
 	-d=<domain>: domain name
 	-t=<tags>: tags for s3 bucket
+	-w <creates workspace if not exists>
 
 EXAMPLE
-	host_s3_public_static_site.sh -a=apply -d=example.com -t='{"key":"value"}'"
+	host_s3_public_static_site.sh -a=apply -d=example.com -t='{"key":"value"}' -w"
 exit
 fi
 
@@ -39,12 +40,15 @@ case $i in
 	TAGS="${i#*=}"
 	shift
 	;;
+	-w )
+	CREATE_WORKSPACE=True
+	shift
+	;;
 	* )
 	usage
 	;;
 esac
 done
-
 
 if [ "$ACTION" != "apply" -a "$ACTION" != "destroy" -a "$ACTION" != "plan" ];
 then
@@ -53,12 +57,19 @@ then
 fi
 
 pushd terraform
+terraform init 2>&1
 terraform workspace select ${DOMAIN_NAME}
 if [ "$?" -ne 0 ]
 then
-	echo "[+] Try executing: terraform workspace new ${DOMAIN_NAME} inside terraform folder"
-	exit -1
+	if [ $CREATE_WORKSPACE ]
+	then
+		terraform workspace new ${DOMAIN_NAME}
+	else
+		echo "[+] Try executing: terraform workspace new ${DOMAIN_NAME} inside terraform folder"
+		exit -1
+	fi
 fi
+
 terraform init
 terraform ${ACTION} -var="domain=${DOMAIN_NAME}" -var="tags=${TAGS}"
 
