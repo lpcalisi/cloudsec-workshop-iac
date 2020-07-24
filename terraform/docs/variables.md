@@ -8,7 +8,7 @@ The `type` argument in a variable block allows you to restrict the type of value
 <br>
 
 ### Constructors
-Allow specify more complex types such as collections
+Allow us to specify more complex types such as collections
 
 * list
 * set
@@ -44,8 +44,8 @@ variable "complex" {
 }
 ``` 
 
-### Other assign variables ways
-Anyway, we need to define the vars empty into root module like
+### Other ways of assigning variables
+Anyway, we need to define the empty vars into root module, as follows
 ```hcl
   variable "variableName" {}
 ```
@@ -59,7 +59,7 @@ foo$bar:~$ terraform apply -var='image_id_map={"us-east-1":"ami-abc123","us-east
 
 #### Variable Files
 We could define some files ending in either `.tfvars` or `.tfvars.json` to set predefined empty vars. It's very usefull for git ignore.
-This example file `terraform.tfvars` will set `secret` predefined empty variable. If you want to use another var file name, you could specify it with flag `-var-file=filepath` 
+This example file `terraform.tfvars` will set `secret` predefined empty variable. If you want to use another var file name, you could specify it with the `-var-file=filepath` flag 
 
 ###### .tfvars
 ```hcl
