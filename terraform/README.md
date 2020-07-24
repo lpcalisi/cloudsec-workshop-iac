@@ -18,7 +18,7 @@ Terraform is an open-source tool created by Hashicorp, it let us declare a certa
     * <a href="./demos/4_workspaces">Demo 4</a>
   * <a href="./docs/projectsStructures.md" >Project Structure</a>
   * <a href="./docs/modules.md" >Modules</a>
-    * <a href="./demos/7_manage_multiple_s4_static_sites/">Demo 7</a>
+    * <a href="./demos/7_manage_multiple_s3_static_sites">Demo 7</a>
 
 ### What do you need to do this workshop?
 * <a href="https://learn.hashicorp.com/terraform/getting-started/install.html">Install Terraform</a>
