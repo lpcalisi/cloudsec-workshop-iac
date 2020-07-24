@@ -1,16 +1,16 @@
 # Playing with modules
 
-In this demo, I developed a module for create and manage many static websites hosted on S3 buckets. I merge many of terraform concepts such as modules, workspaces and remote state.
+In this demo, I developed a module that creates and manages many static websites hosted on S3 buckets. I merge many of terraform concepts such as modules, workspaces and remote state.
 
 ---
 #### What did we do in this demo?
 
-As we saw before, in theory about modules, it allow us package, reuse and better organizes our configurations.
-In this demostration, we created a module called `create_s3_public_static_site` that need to be called with two arguments, domain name of our static website and the tags that should have the S3 bucket, this could allow us for example get the cost of each client.
+As we saw before, in the module's theory section, it let us package, reuse and better organize our configurations.
+In this demostration, we created a module called `create_s3_public_static_site` that needs to be call with two arguments, the domain name of our static website and the tags that should have the S3 bucket. This last will allow us, for example, to get the cost of each client separately.
 
-In the other hand, we have created a script `deploy.sh` that allow us abstract the deployments of the static websites using workspaces and saving all of our differents clients websites in the same backend.
+On the other hand, we have created a script `deploy.sh` that allow us to abstract the deployments of the static websites using workspaces and saving all of our different client's websites states in the same backend.
 
-In the future, it would be usefull add to serve the websites with a CDN and support for custom S3 bucket policies (now is public by default)
+In the future, we can extend this script and integrate it with a CDN  (Cloudflare, Cloudfront, etc) and support for custom S3 bucket policies (now is public by default)
 
 ---
 
