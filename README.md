@@ -36,6 +36,8 @@ Instead the Software Provisioning tools are the ones which configure and provisi
    * Building Custom Images
         + Packer
 
+<image src="./tools.png">
+
 In example, we could create an EC2 instance with Terraform and then, once it is created, you should configure it by ansible playbook.
 Other way of software provisioning could be the creation of an image with all needed configurations and software using Packer + Provisioner (ansible, etc) and  then to make an EC2 instance deployment with Terraform using this image.
 
