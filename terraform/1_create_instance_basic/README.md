@@ -16,4 +16,4 @@ foo@bar:~$ terraform destroy
 
 #### After applied, you should see the next output.
 
-<image src="https://github.com/lpcalisi/cloudsec-workshop-iac/blob/master/terraform/1_create_instance_basic/images/applied.png">
+<image src="./images/applied.png">
