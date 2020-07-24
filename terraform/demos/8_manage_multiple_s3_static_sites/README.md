@@ -20,12 +20,18 @@ In the future, it would be usefull add to serve the websites with a CDN and supp
 * *Create a new folder with the `domain name` and copy all your websites files inside it*
 * *Make deployment with deploy.sh*
   ```console
-  foo$bar:~$ ./deploy.sh -h
+    foo$bar:~$ ./deploy.sh -h
   OPTIONS
     -a=<action>: terraform action
     -d=<domain>: domain name
     -t=<tags>: tags for s3 bucket
+    -w <creates workspace if not exists>
 
   EXAMPLE
-    host_s3_public_static_site.sh -a=apply -d=example.com -t='{key:value}'
+    host_s3_public_static_site.sh -a=apply -d=example.com -t='{key:value}' -w
+  ```
+  
+  ```console
+  
+
   ```
