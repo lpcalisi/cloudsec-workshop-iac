@@ -9,7 +9,7 @@ provider "grafana" {
 }
 ```
 
-#### In the other hand, we could write our own custom providers in `golang` for example to manage our own private cloud.
+#### On the other hand, we could write our own custom providers in `golang` for example to manage our own private cloud.
 
 <br>
 Guide for write custom providers &rarr; <a href="https://www.terraform.io/docs/extend/writing-custom-providers.html"> Terraform Write Custom Providers </a>
