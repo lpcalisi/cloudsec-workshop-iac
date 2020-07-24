@@ -26,7 +26,7 @@ Usually remote states are defined in the `backend.tf`. If not terraform `terrafo
  ```
  
 #### Other usefull operations
-For show these operations, we use existing <a href="https://raw.githubusercontent.com/lpcalisi/cloudsec-workshop-iac/master/terraform/2_instance_with_sg/terraform.tfstate">terraform.tfstate</a> saved into demo 2
+For show these operations, we should to use the terraform.tfstate created after having made demo 2.
 
 * #### terraform fmt
 Run `terraform fmt` before commit new change on your terraform files its a good practice for avoid fakes differences in version control.
@@ -48,7 +48,7 @@ foo@bar:~$ terraform state show aws_instance.test
 # aws_instance.test:
 resource "aws_instance" "test" {
     ami                          = "ami-0f9c9884b78c1a3f6"
-    arn                          = "arn:aws:ec2:us-east-1:929546645540:instance/i-0ed06b9901833678c"
+    arn                          = "arn:aws:ec2:us-east-1:123456781234:instance/i-0ebc1j4912cjalco1"
     associate_public_ip_address  = true
     ...
     ...
@@ -98,7 +98,7 @@ resource "aws_security_group" "test-ssh-connection" {
 foo@bar:~$ terraform refresh
 aws_key_pair.test_key: Refreshing state... [id=test-workshop-iac-key]
 aws_security_group.test-ssh-connection: Refreshing state... [id=sg-00b218dd65fbabd8c]
-aws_instance.example: Refreshing state... [id=i-0ed06b9901833678c]
+aws_instance.example: Refreshing state... [id=i-0ebc1j4912cjalco1]
 ````
 
 ###### after refresh
