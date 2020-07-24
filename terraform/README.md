@@ -13,12 +13,12 @@ Terraform is an open-source tool created by Hashicorp, it let us declare a certa
     * <a href="./demos/1_create_instance_basic">Demo 1</a>
     * <a href="./demos/2_instance_with_sg">Demo 2</a>
   * <a href="./docs/datasources.md" >Data Sources</a>
-    * <a href="./demos/3_data_sources">Demo 5</a>
+    * <a href="./demos/3_data_sources">Demo 3</a>
   * <a href="./docs/status.md" >State</a>
-    * <a href="./demos/4_remote_state">Demo 3</a>
-    * <a href="./demos/5_importing_existing_resources">Demo 6</a>
+    * <a href="./demos/4_remote_state">Demo 4</a>
+    * <a href="./demos/5_importing_existing_resources">Demo 5</a>
   * <a href="./docs/workspaces.md" >Workspaces</a>
-    * <a href="./demos/6_workspaces">Demo 4</a>
+    * <a href="./demos/6_workspaces">Demo 6</a>
   * <a href="./docs/modules.md" >Modules</a>
     * <a href="./demos/7_manage_multiple_s3_static_sites">Demo 7</a>
   * <a href="./docs/projectsStructures.md" >Project Structure</a>
