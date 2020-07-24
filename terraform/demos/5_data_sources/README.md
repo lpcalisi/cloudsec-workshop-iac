@@ -1,3 +1,3 @@
-# First Steps: Use data sources for include dynamic information in our terraform resources.
+# Using data sources to get the most recent ubuntu 16.04 image for aws.
 
-#### Get latest ubuntu aws image from aws_ami datasource.
+
