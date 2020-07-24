@@ -43,12 +43,12 @@ Other way of software provisioning could be the creation of an image with all ne
 
 In this workshop, we are going to talk about 3 different types of provisioning.
   * Infrastructure Provisioning (ie: Terraform)
-  * Infrastructure + Software Provisioning (ie: Terraform + Ansible)
+  * Infrastructure Provisioning + Configuration Management (ie: Terraform + Ansible)
   * Build Custom Image + Infrastructure Provisioning (ie: Packer + Terraform).
 
 <br/>
 
 ### Start Workshop
-* <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform">Terraform</a>
-* <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/packer">Packer</a>
+* <a href="./terraform">Terraform</a>
+* <a href="./packer">Packer</a>
 
