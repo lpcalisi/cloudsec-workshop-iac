@@ -1,6 +1,6 @@
 # Playing with modules
 
-In this demo, i created a module for create and manage many static websites hosted on S3 buckets. I merge many of terraform concepts such as modules, workspaces and remote state.
+In this demo, I developed a module for create and manage many static websites hosted on S3 buckets. I merge many of terraform concepts such as modules, workspaces and remote state.
 
 ---
 #### What did we do in this demo?
