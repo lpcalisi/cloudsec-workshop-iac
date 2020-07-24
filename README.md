@@ -8,7 +8,7 @@
 5. [Start Workshop](#start-workshop)
 
 ### What is IAC?
-Nowadays, most of the developers create their infrastructure resources manually, it brings problems when you want to replicate or modify the infrastructure, having the chance to enter errors or not knowing exactly wich resources form parts of it.
+Nowadays, most of the companies create their infrastructure resources manually, this brings problems when you want to replicate or modify the infrastructure, having the chance to enter errors or not knowing exactly wich resources form parts of it.
 The infrastructure as code let us define all of our infraestructure resources and configurations in an automated way, versioned and controlled.
 
 ### Why should we use IAC?
@@ -19,16 +19,16 @@ The infrastructure as code let us define all of our infraestructure resources an
    * It decreases human error, even though we can introduce bugs through the code, before applying the changes we will see which infrastructure components and properties will be modified.
 
 
-### Difference beetween Infrastructure Provisioning and Software Provisioning tools:
-The Infrastructure Provisioning tools let us create automated infraestructure through the interaction with different providers (AWS, GCP, AZURE, etc). For Example, we can create an EC2 instance, a S3 bucket or a Route53 DNS zone.
-Instead the Software Provisioning tools are the ones which configure and provision software inside the servers. For instance, the web server installation and configuration.
+### Difference beetween Provisioning and Configuration Management tools:
+The provisioning tools let us create automated infraestructure through the interaction with different providers (AWS, GCP, AZURE, etc). For Example, we can create an EC2 instance, a S3 bucket or a Route53 DNS zone.
+Instead the Configuration Management tools are the ones which configure and provision software inside the servers. For instance, the web server installation and configuration.
 
 #### **Tools:**
-   * Infrastructure Provisioning:
+   * Provisioning:
         + Terraform
         + Cloudformation
         + Deploy Manager
-   * Software Provisioning:
+   * Configuration Management:
         + Ansible
         + Puppet
         + Cheff 
