@@ -1,7 +1,7 @@
 
-# First Steps: Importing existing resources in Terraform.
+# Importing existing resources in Terraform.
 
-Permite importar recursos ya existentes a nuestro estado de Terraform para poder modificarlos.
+Terraform allow us to import existents resources into our tf state in order to would manipulate it.
 
 Cada resource tiene instrucciones de como debe ser importado, al final de cada doc de terraform. Por ejemplo, para importar una <a href="https://www.terraform.io/docs/providers/aws/r/instance.html">AWS EC2 Instance</a>.
 
