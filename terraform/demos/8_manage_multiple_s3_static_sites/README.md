@@ -14,10 +14,13 @@ In the future, it would be usefull add to serve the websites with a CDN and supp
 
 ---
 
+* *Set up or create your S3 bucket in `backend.tf` like you did the previous demos.*
+    <image src="./images/create_bucket.png">
 
-
-* *Set up your S3 bucket in `backend.tf` like you did the previous demos.*
 * *Create a new folder with the `domain name` and copy all your websites files inside it*
+
+  <image src="./images/create_site_folder.gif">
+  
 * *Make deployment with deploy.sh*
   ```console
     foo$bar:~$ ./deploy.sh -h
@@ -32,6 +35,15 @@ In the future, it would be usefull add to serve the websites with a CDN and supp
   ```
   
   ```console
-  
-
+    foo$bar:~$ ./deploy.sh -a=apply -d=workshop-cloudsec-iac-example-1234 -t='{"project":"workshop", "team":"cloudsec"}' -w
   ```
+  
+  <image src="./images/applied.png">
+  
+  We have seted a output var in module in order to see S3 Webste endpoint. If we try to curl the endpoint, we get our static site.
+  
+  
+  <image src="./images/curl.gif">
+  
+  
+  
