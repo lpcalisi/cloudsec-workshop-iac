@@ -19,4 +19,4 @@ foo$bar:~$ terraform import aws_instance.web i-1234
 Para finalizar, una vez importado el recurso podemos ver todas sus propiedades buscandolo dentro de nuestro terraform state, pero debemos agregar en el codigo todas las propiedades necesarias para poder modificar el recurso.
 
 
-<image src="https://github.com/lpcalisi/cloudsec-workshop-iac/blob/master/terraform/6_importing_existing_resources/images/import_workflow.png">
+<image src="./images/import_workflow.png">
