@@ -22,8 +22,8 @@ In the future, it would be usefull add to serve the websites with a CDN and supp
   <image src="./images/create_site_folder.gif">
   
 * *Make deployment with deploy.sh*
-  ```console
-    foo@bar:~$ ./deploy.sh -h
+```console
+foo@bar:~$ ./deploy.sh -h
   OPTIONS
     -a=<action>: terraform action
     -d=<domain>: domain name
@@ -32,11 +32,12 @@ In the future, it would be usefull add to serve the websites with a CDN and supp
 
   EXAMPLE
     host_s3_public_static_site.sh -a=apply -d=example.com -t='{key:value}' -w
-  ```
-  
-  ```console
-    foo@bar:~$ ./deploy.sh -a=apply -d=workshop-cloudsec-iac-example-1234 -t='{"project":"workshop", "team":"cloudsec"}' -w
-  ```
+```
+
+```console
+foo@bar:~$ ./deploy.sh -a=apply -d=workshop-cloudsec-iac-example-1234 \
+    -t='{"project" :"workshop", "team":"cloudsec"}' -w
+```
   
   <image src="./images/applied.png">
   
