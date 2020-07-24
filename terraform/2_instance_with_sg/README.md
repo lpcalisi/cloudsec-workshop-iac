@@ -16,11 +16,11 @@ foo@bar:~$ terraform output
 ``` 
 
 #### After applied, you should see the next output. 
-<image src="https://github.com/lpcalisi/cloudsec-workshop-iac/blob/master/terraform/2_instance_with_sg/images/applied.png">
+<image src="./images/applied.png">
   
 
 ### Its everything works ok, only your home public ip adress should be get access to the instance.
 
 #### Try it!
 
-<image src="https://github.com/lpcalisi/cloudsec-workshop-iac/blob/master/terraform/2_instance_with_sg/images/ssh.gif">
+<image src="./images/ssh.gif">
