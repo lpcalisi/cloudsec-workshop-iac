@@ -1,12 +1,12 @@
 # Resources
 
-Terraform resources are the componentes that we can created, update or modify.
+Terraform resources are the components that we can create, update or modify.
 
-* For define resources, we need to had provider defined
-  * Provider should be initialized `terraform init`
+* To define resources, we need to have the provider defined
+  * Provider should be initialized with `terraform init`
  
-* Resource definition syntax
-  * You can`t use the same name for the same resource type
+* Resource syntax definition 
+  * You can not use the same name for the same resource type
 ```hcl
     resource "resource_type" "resource_name" {
         property = value
@@ -14,7 +14,7 @@ Terraform resources are the componentes that we can created, update or modify.
         ...
     }
 ```
-* Each resource will have many available properties, you could use it as input of other resources or deploy's output.
+* Each resource will have many available properties, you could use them as input of other resources or deploy output.
 
    e.g:
     
@@ -41,16 +41,17 @@ Terraform resources are the componentes that we can created, update or modify.
      }
      ```
 
-You can view resource example and relations beetween it in <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/2_instance_with_sg">demo 2</a>
+You can see resource examples and relations among them in <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/2_instance_with_sg">demo 2</a>
 
-### Other usefull operations with resources
+### Other useful operations with resources
 * terraform [plan, apply, destroy] for a specific resource
 ```console
 foo$bar:~$ terraform plan -target=aws_s3_bucket.example
 ```
 
 * terraform taint address
-Mark resource as tainted means that it will be destroyed and created again at the next apply. 
+
+To mark resources as tainted means that they will be destroyed and created again at the next apply. 
 ```console
 foo$bar:~$ terraform taint aws_security_group.test-ssh-connection
 Resource instance aws_security_group.test-ssh-connection has been marked as tainted.
