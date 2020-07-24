@@ -64,7 +64,7 @@ output "instance_public_ip" {
 ```
 
 
-For more docs &rarr; <a href="https://www.terraform.io/docs/configuration/modules.html"/>
+For more docs &rarr; <a href="https://www.terraform.io/docs/configuration/modules.html">Terraform Modules</a>
 
 
 
