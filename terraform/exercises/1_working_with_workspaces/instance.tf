@@ -14,7 +14,13 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
+data "aws_caller_identity" "current" {}
+
 resource "aws_instance" "test" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = "t2.micro"
+
+  tags = {
+    Name = "${terraform.workspace}-instance-${data.aws_caller_identity.current.user_id}"
+  }
 }
