@@ -21,8 +21,8 @@ resource "aws_key_pair" "test_key" {
 # Launch EC2 Instance
 resource "aws_instance" "project-ec2" {
 
-  ami = data.ubuntu-linux-2004.aws_ami
-  instance_type = var.config.instance_type
+  ami = data.ubuntu-linux-2004.aws_ami.name
+  instance_type = "t2.micro"
 
   associate_public_ip_address = true
 
