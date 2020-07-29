@@ -24,5 +24,8 @@ All of this commands must be preceded by `terraform`
 | validate | Syntax validation                                                                                                        |
 | workspace| Environment management                                                                                                   |
 
+### Terraform Workflow
+
+<image src="images/tf_workflow.png">
 
 For more docs &rarr; <a href="https://www.terraform.io/docs/commands/index.html"> Terraform Commands </a>
