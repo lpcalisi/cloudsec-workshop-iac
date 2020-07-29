@@ -26,10 +26,12 @@ All of this commands must be preceded by `terraform`
 
 ### Terraform Workflow
 
-<image src="images/tf_workflow.png">
+<image src="images/tf_workflow.png" align="center"/>
 
 
 ### Terraform Cycle
-<image src="images/ciclo.png">
+<p align="center">
+  <image src="images/ciclo.png" align="center" width="50%" height="50%" />
+</p>
 
 For more docs &rarr; <a href="https://www.terraform.io/docs/commands/index.html"> Terraform Commands </a>
