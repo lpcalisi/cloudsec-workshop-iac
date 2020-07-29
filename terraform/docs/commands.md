@@ -25,8 +25,9 @@ All of this commands must be preceded by `terraform`
 | workspace| Environment management                                                                                                   |
 
 ### Terraform Workflow
-
-<image src="images/tf_workflow.png" align="center"/>
+<p align="center">
+  <image src="images/tf_workflow.png" align="center"/>
+</p>
 
 
 ### Terraform Cycle
