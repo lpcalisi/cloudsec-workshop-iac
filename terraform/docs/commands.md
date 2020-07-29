@@ -30,6 +30,6 @@ All of this commands must be preceded by `terraform`
 
 
 ### Terraform Cycle
-<image src="imgaes/ciclo.png">
+<image src="images/ciclo.png">
 
 For more docs &rarr; <a href="https://www.terraform.io/docs/commands/index.html"> Terraform Commands </a>
