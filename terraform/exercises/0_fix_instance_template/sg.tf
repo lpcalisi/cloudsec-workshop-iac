@@ -1,6 +1,6 @@
 # AWS EC2 Security group for MasterTV
 resource "aws_security_group" "not-a-webserver-sg" {
-  name = "workshop-iac-sg"
+  name        = "workshop-iac-sg"
   description = "Allow https/http/ssh ports"
 
   egress {
@@ -11,15 +11,15 @@ resource "aws_security_group" "not-a-webserver-sg" {
   }
 
   ingress {
-    from_port = 80
-    to_port = 80
-    protocol = "tcp"
+    from_port   = 80
+    to_port     = 80
+    protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
   ingress {
-    from_port = 443
-    to_port = 443
-    protocol = "tcp"
+    from_port   = 443
+    to_port     = 443
+    protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
