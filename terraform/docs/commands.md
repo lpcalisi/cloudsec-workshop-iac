@@ -28,4 +28,8 @@ All of this commands must be preceded by `terraform`
 
 <image src="images/tf_workflow.png">
 
+
+### Terraform Cycle
+<image src="imgaes/ciclo.png">
+
 For more docs &rarr; <a href="https://www.terraform.io/docs/commands/index.html"> Terraform Commands </a>
