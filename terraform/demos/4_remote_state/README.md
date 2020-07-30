@@ -12,5 +12,5 @@
 <image src="./images/set_backend.gif">
 
 
-#### 3. *Run `terraform init` to initialize the backend.
+#### 3. *Run `terraform init` to initialize the backend.*
 <image src="./images/tf_init.png">
