@@ -5,6 +5,7 @@ Tu tarea es hacer el deploy inicial de la infraestructura y luego realizar los c
 
 ## Etapas
 ### Crear la infraestructura inicial
+Debemos hacer el deploy inicial de la infraestructura. Luego de hacer el deploy no estamos seguros si el espacio que tenemos en el disco sera suficiente para nuestra aplicacion. Necesitamos un disco de al menos 4GB. Como podriamos ver la informacion de la capacidad del disco guardada dentro del estado de terraform?
 
 ### Nuevo requerimiento
 Nuestro servicio hace uso de datos sensibles, y es importante que le agreguemos un tag a nuestra instancia para indicar que la confidencialidad de la instancia es alta.
@@ -13,9 +14,7 @@ Debemos agregar un tag a la instancia con la key `confidentiality` y el valor `h
 
 Antes de realizar el cambio con `terraform apply` debemos verificar que este cambio no impacte en la disponibilidad del servicio. Como podriamos hacer eso? Se vera afectada la disponibilidad?
 
-### Problemas de procesamiento
-Nuestra instancia procesa muchos datos, y nos dimos cuenta que la cantidad de CPUs que tiene la instancia es poca. Debemos cambiar el `instance_type` a `t2.medium`.
+### Cambio de imagen
+Necesitamos utilizar un nuevo software que solo se encuentra disponible para Ubuntu 18.04. Debido a esto tenemos que cambiar el filtro de la AMI al valor `ubuntu/images/hvm-ssd/ubuntu-bionic-18.04-amd64-server-*`
 
 Que impacto tendra este cambio sobre la disponibilidad del servicio? Perderemos los datos que existen dentro de la instancia al realizar el cambio?
-
-### Problemas de procesamiento (otra vez)
