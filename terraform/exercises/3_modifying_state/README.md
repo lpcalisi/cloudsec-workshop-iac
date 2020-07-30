@@ -7,7 +7,7 @@ Tu tarea es hacer el deploy inicial de la infraestructura y luego realizar los c
 Debemos hacer el deploy inicial de la infraestructura. Luego de hacer el deploy no estamos seguros si el espacio que tenemos en el disco sera suficiente para nuestra aplicación. Necesitamos un disco de al menos 4GB. ¿Cómo podemos ver la información de la capacidad del disco guardada dentro del estado de terraform?
 
 ## Nuevo requerimiento
-Nuestro servicio hace uso de datos sensibles cuya protección es requerida por distintas regulaciones, y es importante que le agreguemos un tag a nuestra instancia para indicar que la confidencialidad de la instancia es alta.
+Nuestro servicio hace uso de datos sensibles cuya protección es requerida por distintas regulaciones, y es importante que le agreguemos un tag a nuestra instancia para reflejar esto.
 
 Debemos agregar un tag a la instancia con la key `Confidentiality` y el valor `Restricted`.
 
