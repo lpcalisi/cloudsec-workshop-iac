@@ -6,7 +6,8 @@
 #### 1. *Create an S3 bucket*
 
 <image src="./images/create_bucket.gif">
-```
+
+```bash
 aws s3api create-bucket --bucket pelu-workshop-example-$RANDOM --region us-east-1
 ```
 
@@ -16,6 +17,7 @@ aws s3api create-bucket --bucket pelu-workshop-example-$RANDOM --region us-east-
 
 #### 3. *Run `terraform init` to initialize the backend.*
 <image src="./images/tf_init.png">
-```
+
+```bash
 terraform init
 ```
