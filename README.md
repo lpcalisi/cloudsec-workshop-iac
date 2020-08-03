@@ -36,7 +36,7 @@ Instead the Configuration Management tools are the ones which configure and prov
    * Building Custom Images
         + Packer
 
-<image src="./tools.png">
+<image src="./tools.png"/>
 
 
 In example, we could create an EC2 instance with Terraform and then, once it is created, you should configure it by ansible playbook.
