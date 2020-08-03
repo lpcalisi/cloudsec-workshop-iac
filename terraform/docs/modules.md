@@ -4,14 +4,20 @@ A *module* is a container for multiple resources that are used together.
 
 * You can use modules to make our configurations more organized.
 * Use third party modules
-  * Modules from github
-  * Import other modules from the community.
+  * Terraform Registry
+  * GitHub
+  * Bitbucket
+  * S3 buckets
+  * GCS buckets
 * Reuse parts of your code.
-  * e.g: create cluster and pass number of desired instances as parameter.
+  * Create cluster (e.g. one for staging and other for prod).
+  * Create alerts (e.g. create similar alerts with one or two parameters of difference).
 
 --- 
 
-#### Defining example basic module
+## Example
+
+### Defining a basic module
 * *module-instance/variables.tf*
 ```hcl
 variable image {}
@@ -24,6 +30,7 @@ variable instance_type {}
 resource "aws_instance" "test" {
   ami             = var.image
   instance_type   = var.instance_type
+}
 ```
 
 * *module-instance/aws.tf*
@@ -34,7 +41,7 @@ provider "aws" {
 }
 ```
 
-#### Invoking local module
+### Invoking the module
 
 ```hcl
 module "ec2_instance" {
@@ -45,7 +52,7 @@ module "ec2_instance" {
 }
   ```
   
-#### Accessing child modules output values
+### Accessing child modules output values
 
 The resources defined in a module are encapsulated, so the calling module cannot access their attributes directly. However, the child module can declare output values to selectively export certain values to be accessed by the calling module.
 
@@ -65,11 +72,3 @@ output "instance_public_ip" {
 
 
 For more docs &rarr; <a href="https://www.terraform.io/docs/configuration/modules.html">Terraform Modules</a>
-
-
-
-
-
-
-
-
