@@ -1,4 +1,4 @@
-# Infastructure as code - Workshop
+# Infrastructure as code - Workshop
 
 ## Table of Contents
 1. [IAC Concept](#what-is-iac)
