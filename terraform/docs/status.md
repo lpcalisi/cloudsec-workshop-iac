@@ -1,6 +1,6 @@
 # State
 
-One of the best qualities of terraform is to keep your infrastructure in a certain state. Terraform states is in charge of keeping track of every change made on our terraform resources. State, should represent the actual infrastructure deployed. Changing resources without terraform will be not reflected on the state.
+One of the best qualities of terraform is to keep your infrastructure in a certain state. Terraform states is in charge of keeping track of every change made on our terraform resources. State should represent the current infrastructure deployed. Changing resources without terraform will be not be reflected on the state, you should always modify your infrastructure using terraform, otherwise you might lose your changes.
 Terraform has two ways to manage states.
 
 #### Local State
@@ -9,11 +9,11 @@ Terraform has two ways to manage states.
  * One disadvantage, it's that we all have to be sure to have the latest version of the state.
 
 #### Remote State
-  * Remote states are generally used in medium / large scale projects. Since it always avaiable and updated. Every developer used the same file which can be hosted in a common place.
+  * Remote states are generally used in medium / large scale projects. Since it always avaiable and updated. Every developer uses the same file which can be hosted in a common place.
   * You need to provide the remote storage manually, it's not posible to create it with terraform within the same project.
   * You need to have access to the remote storage such as AWS S3 or GCS (Google Cloud Storage).
- 
-Usually remote states are defined in the `backend.tf`. If not terraform `terraform {}` is defined the state will be stored locally. 
+
+Usually remote states are defined in the `backend.tf`. If not terraform `terraform {}` is defined the state will be stored locally.
 
  ```hcl
  terraform {
@@ -24,15 +24,15 @@ Usually remote states are defined in the `backend.tf`. If not terraform `terrafo
   }
 }
  ```
- 
+
 #### Other usefull operations
-For show these operations, we should to use the terraform.tfstate created after having made demo 2.
+To show these operations, we should to use the terraform.tfstate created after having done demo 2.
 
 * #### terraform fmt
-Run `terraform fmt` before commit new change on your terraform files its a good practice for avoid fakes differences in version control.
+Run `terraform fmt` before committing a new change on your terraform files its a good practice to avoid useless differences in version control.
 
 * #### terraform show
-Get list of all resources in state
+Get the list of all resources in the state
 ````console
 foo@bar:~$ terraform state list
 aws_instance.test
@@ -40,7 +40,7 @@ aws_key_pair.test_key
 aws_security_group.test-ssh-connection
 ````
 
-Show all properties about a resource
+Show all properties of a resource
 ```console
 foo@bar:~$ terraform state show aws_instance.test
 ```
@@ -63,7 +63,7 @@ Move "aws_instance.test" to "aws_instance.example"
 Successfully moved 1 object(s).
 ```
 * #### terraform refresh
-For this example, i had modified the resource `aws_security_group.test-ssh-connection` manually adding ingress rule with example CIDR `123.123.123.123/32` 
+For this example, I had modified the resource `aws_security_group.test-ssh-connection` manually adding an ingress rule with the example CIDR `123.123.123.123/32`
 ###### original security group
 ```console
 foo@bar:~$ terraform state show aws_security_group.test-ssh-connection
@@ -181,13 +181,13 @@ aws_security_group.test-ssh-connection
 ```
 
 
-**:warning: IMPORTANT: either `terraform refresh` or `terraform import` update the changes only on the states, its not added the statements to your terraform files. If you want it, you should add it by hand based on state.**
+**:warning: IMPORTANT: both `terraform refresh` and `terraform import` update the changes only on the states, but they are not added to your terraform files. If you want that, you should add them by hand using the generated state as a guide.**
 
 
 For more docs:
 
  &rarr; <a href="https://www.terraform.io/docs/state/index.html"> Terraform State </a>
- 
+
  &rarr; <a href="https://www.terraform.io/docs/backends/types/local.html"> Terraform Local </a>
- 
+
  &rarr; <a href="https://www.terraform.io/docs/backends/types/remote.html"> Terraform Remote </a>
