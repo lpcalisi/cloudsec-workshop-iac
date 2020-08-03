@@ -24,7 +24,11 @@ Terraform is an open-source tool created by Hashicorp, it let us declare a certa
   * <a href="./docs/projectsStructures.md" >Project Structure</a>
   * <a href="./docs/functions.md" >Introduction to functions</a>
   
-
+### Excercises:
+ 1. <a href="./exercises/0_fix_instance_template">Fix Instance Template</a>
+ 2. <a href="./exercises/1_working_with_workspaces">Working with workspaces</a>
+ 3. <a href="./exercises/2_using_modules">Using Modules</a>
+ 4. <a href="./exercises/3_modifying_state">Modifying states</a>
 ### What do you need to do this workshop?
 * <a href="https://learn.hashicorp.com/terraform/getting-started/install.html">Install Terraform</a>
 * AWS Account
