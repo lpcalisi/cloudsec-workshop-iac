@@ -3,7 +3,7 @@
 ## Table of Contents
 1. [IAC Concept](#what-is-iac)
 2. [IAC Benefits](#why-should-we-use-iac)
-3. [Infrastructure Provisioning vs Software Provisioning](#difference-beetween-infrastructure-provisioning-and-software-provisioning-tools)
+3. [Infrastructure Provisioning vs Software Provisioning](#difference-beetween-provisioning-and-configuration-management-tools)
 4. [Tools](#tools)
 5. [Start Workshop](#start-workshop)
 
