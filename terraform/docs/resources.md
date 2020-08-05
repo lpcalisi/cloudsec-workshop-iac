@@ -41,7 +41,7 @@ Terraform resources are the components that we can create, update or modify.
      }
      ```
 
-You can see resource examples and relations among them in <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/2_instance_with_sg">demo 2</a>
+You can see resource examples and relations among them in <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/demos/2_instance_with_sg">demo 2</a>
 
 ### Other useful operations with resources
 * terraform [plan, apply, destroy] for a specific resource
