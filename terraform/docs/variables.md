@@ -85,7 +85,7 @@ foo$bar:~$ export TF_VAR_secret="THIS IS MY SECRET"
 <br>
 
 ### Demos:
-  * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/0_variables">Variables</a>
+  * <a href="https://github.com/lpcalisi/cloudsec-workshop-iac/tree/master/terraform/demos/0_variables">Variables</a>
 
 <br>
 
