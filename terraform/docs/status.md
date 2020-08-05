@@ -1,7 +1,13 @@
 # State
 
 One of the best qualities of terraform is to keep your infrastructure in a certain state. Terraform states is in charge of keeping track of every change made on our terraform resources. State should represent the current infrastructure deployed. Changing resources without terraform will be not be reflected on the state, you should always modify your infrastructure using terraform, otherwise you might lose your changes.
-Terraform has two ways to manage states.
+
+<p align="center">
+  <image src="images/terraformstate.png" align="center" width="50%" height="50%" />
+</p>
+
+
+Terraform has two ways to manage states
 
 #### Local State
  * By default, terraform creates a `terraform.tfstate` file in the root modules's path which holds all the data of your states. Additionally, a second file  `terraform.tfstate.backup` saves the previous state. If you want to define your own terraform state file path, you can do so with the flag `-state=path`
