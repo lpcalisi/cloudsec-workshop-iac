@@ -13,7 +13,7 @@ variable "AWS_REGION" {
 variable "AMIS" {
   type = map(string)
   default = {
-    us-east-1 = "ami-0f9c9884b78c1a3f6"
+    us-east-1 = "ami-000b3a073fc20e415"
   }
 }
 
@@ -22,8 +22,8 @@ variable "VPCS" {
   description = "Subnet ID by region"
   default = {
     us-east-1 = {
-      "VPC"    = "vpc-ea85138e"
-      "SUBNET" = "subnet-9a7a9fc2"
+      "VPC"    = "vpc-52bc482f"
+      "SUBNET" = "subnet-7db82a73"
     }
   }
 }
